@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en" style="background-color: #333f50;;">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Test Simulation</title>
+    <link rel="stylesheet" href="./style/page3.css">
+</head>
+
+<body>
+    <!-- Custom Alert Popup -->
+    <div id="submit-popup" class="popup" style="display: none;">
+        <div class="popup-content">
+            <h2 style="margin-bottom: 7px">Congratulations! <br>
+                You have completed the game </h2>
+            <a href="test_review.html">
+                <button id="submit-continue-button" style="margin-top: 0px;">Continue</button></a>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <div class="main-content" id="main-content">
+        <!-- Timer and Progress Bar -->
+        <div class="timer-container">
+            <button id="clearStorage">Restart</button>
+
+            <div class="timer-text"></div>
+            <div class="progress-bar">
+                <div class="progress"></div>
+            </div>
+        </div>
+
+        <!-- Main Box -->
+        <div class="main-box" id="main-box">
+            <!-- Left Column -->
+            <div class="top-columns">
+
+                <button id="submit-button" class="submit-button">Submit</button>
+                <div class="inner-column" id="top-cards-column">
+
+                    <div class="small-box" id="top-card-left">
+                    </div>
+                    <div class="small-box" id="top-card-center">
+                    </div>
+                    <div class="small-box" id="top-card-right">
+                    </div>
+                </div>
+                <!-- Right Box -->
+                <div class="right-box">
+                    <div class="small_header">Site 3</div>
+                    <br>
+                    <div class="small_header" style="margin-bottom: 0px;">Attributes</div>
+                    Rigidity: 8-10
+                    <br>
+                    Mobility: 1-2
+                    <br>
+                    Size: 6-8
+                    <br>
+                    <br>
+                    <div class="small_header" style="margin-bottom: 0px;">Trait</div>
+                    Desired: Hydrophilic <br>
+                    Undesired: Heat Resistant
+
+                    <br>
+                </div>
+            </div>
+            <div class="grid" id="buttom-grid">
+                <div class="small-card" id="buttom-card1"></div>
+                <div class="small-card" id="buttom-card2"></div>
+                <div class="small-card" id="buttom-card3"></div>
+                <div class="small-card" id="buttom-card4"></div>
+                <div class="small-card" id="buttom-card5"></div><br>
+                <div class="small-card" id="buttom-card6"></div>
+                <div class="small-card" id="buttom-card7"></div>
+                <div class="small-card" id="buttom-card8"></div>
+                <div class="small-card" id="buttom-card9"></div>
+                <div class="small-card" id="buttom-card10"></div>
+                <button id="legend" class="legend">
+                    <div id="legend_close" class="legend_close">Legend</div>
+                    <div id="legend_open" class="legend_open" style="margin-top: 5px; display: none;">Legend <i
+                            class="arrow down"></i></div>
+                    <div id="legendDiv"><img src="./img/rigidity.png" alt="Rigidity_sign">Rigidity<br><img
+                            src="./img/mobility.png" alt="Rigidity_sign">Mobility<br><img src="./img/size.png"
+                            alt="Rigidity_sign">Size<br><img src="./img/pressure_risistant.png"
+                            alt="Rigidity_sign">Pressure Resistant<br><img src="./img/hydrophilic.png"
+                            alt="Rigidity_sign">Hydrophilic<br><img src="./img/aerobic.png"
+                            alt="Rigidity_sign">Aerobic<br><img src="./img/heat_resistance.png" alt="Rigidity_sign">Heat
+                        Resistant</div>
+                </button>
+
+            </div>
+        </div>
+
+    </div>
+
+    <script src="./js/page11.js"></script>
+</body>
+
+</html>

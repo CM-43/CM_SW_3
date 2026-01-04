@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en" style="background-color: #333f50;;">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Test Simulation</title>
+    <link rel="stylesheet" href="./style/page4.css">
+</head>
+
+<body>
+    <!-- Custom Alert Popup -->
+    <div id="submit-popup" class="popup" style="display: none;">
+        <div class="popup-content">
+            <h2>Click Continue to move to the next step</h2>
+            <a href="page11.html">
+                <button id="submit-continue-button">Continue</button></a>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <div class="main-content" id="main-content">
+        <!-- Timer and Progress Bar -->
+        <div class="timer-container">
+            <button id="clearStorage">Restart</button>
+
+            <div class="timer-text"></div>
+            <div class="progress-bar">
+                <div class="progress"></div>
+            </div>
+        </div>
+
+        <!-- Main Box -->
+        <div class="main-box" id="main-box">
+            <!-- Left Column -->
+            <div class="left-column">
+                <div class="inner-column" id="microbes-column">
+                    <div class="header">Microbes <div class="counter" id="microbes-counter"> 10 </div>
+                    </div>
+                    <div class="small-box" id="microbe1">
+
+
+
+
+                    </div>
+                    <fieldset class="radio_check" id="radio_check">
+                        <label for="site3">Site 3
+                            <input type="radio" id="site3" name="choose_site" value="site3"></label>
+
+                        <label for="reject">Return
+                            <input type="radio" id="reject" name="choose_site" value="reject"></label>
+
+                    </fieldset>
+
+                </div>
+
+                <div class="inner-column" id="site3-column">
+                    <div class="header">Site 3 <div class="counter" id="site3-counter"> 0 </div>
+                    </div>
+                    <div class="small-box" id="site3-box">
+                        <div style="height: 10px;"></div>
+                    </div>
+
+
+                </div>
+
+
+
+                <div class="inner-column" id="reject-column">
+                    <div class="header">Returned <div class="counter" id="reject-counter"> 0 </div>
+                    </div>
+                    <div class="small-box" id="reject-box">
+                        <div style="height: 10px;"></div>
+                    </div>
+
+
+                </div>
+                <div class="inner-column" id="site1-column">
+                    <div class="header"></div>
+
+
+
+                </div>
+
+            </div>
+
+
+            <!-- Right Box -->
+            <div class="right-box" style="min-height: 250px;">
+                <div class="small_header">Site 3</div>
+                <br>
+                <div class="small_header" style="margin-bottom: 0px;">Attributes</div>
+                Rigidity: 8-10
+                <br>
+                Mobility: 1-2
+                <br>
+                Size: 6-8
+                <br>
+                <br>
+                <div class="small_header" style="margin-bottom: 0px;">Trait</div>
+                Desired: Hydrophilic
+                <br>
+                Undesired: Heat Resistant
+
+                
+
+                <br>
+
+
+            </div>
+
+        </div>
+    </div>
+    <div id="continueButtons">
+        <button id="continueButton" style="filter: blur(0px);">Continue</button>
+        <button id="completeButton">Complete</button>
+    </div>
+    <script src="./js/page10.js"></script>
+</body>
+
+</html>

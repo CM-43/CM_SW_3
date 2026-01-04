@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en" style="background-color: #333f50;;">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Test Simulation</title>
+    <link rel="stylesheet" href="./style/index.css">
+</head>
+
+<body>
+
+    <!-- Custom Alert Popup -->
+    <div id="welcome-popup" class="popup" style="display : none;">
+        <div class="popup-content">
+            <h2>Welcome to Site 2</h2>
+            <button id="begin-button">Begin</button>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <div class="main-content" id="main-content">
+        <!-- Timer and Progress Bar -->
+        <div class="timer-container">
+            <button id="clearStorage">Restart</button>
+            <div class="timer-text"></div>
+            <div class="progress-bar">
+                <div class="progress"></div>
+            </div>
+        </div>
+
+        <!-- Main Box -->
+        <div class="main-box" id="main-box">
+            <!-- Left Column -->
+            <!-- Left Column -->
+            <div class="left-column">
+                <div class="Characteristics">Characteristics
+                    <hr style="border-top: dotted 1px;" />
+                </div>
+                <div style="font-size: 18px; font-weight: 400;">Attributes</div>
+                <div class="attribute">
+                    <img src="./img/rigidity.png" alt="Rigidity_sign"
+                        style="width: 25px; margin-top: 8px; display: inline-flex;position: sticky;vertical-align: -6px;">
+                    <span>Rigidity</span>
+                    <label class="switch" id="rigidity-switch">
+                        <input type="checkbox" id="rigidity"
+                            data-target="fromSliderRigidity,toSliderRigidity,sliderValueMin1,sliderValueMax1">
+                        <span class="slider round"></span>
+                    </label>
+                    <div class="slider-value-rigidity" id="sliderValueMin1">3</div>
+                    <div class="slider-value-rigidity" id="sliderValueMax1">5</div>
+                    <div class="range-slider" id="rigidity-slider">
+                        <span class="min-value" style="padding-bottom: 5px;">1</span>
+                        <input id="fromSliderRigidity" type="range" value="1" min="1" max="10" step="1" />
+                        <input id="toSliderRigidity" type="range" value="3" min="1" max="10" step="1" />
+                        <span class="max-value">10</span>
+
+
+                    </div>
+
+                    <img src="./img/mobility.png" alt="Mobility_sign"
+                        style="width: 25px; margin-top: 8px; display: inline-flex;position: relative;vertical-align: -6px; ">
+                    <span>Mobility</span>
+                    <label class="switch">
+                        <input type="checkbox" id="Mobility"
+                            data-target="fromSliderMobility,toSliderMobility,sliderValueMin2,sliderValueMax2">
+                        <span class="slider round"></span>
+                    </label>
+                    <br>
+                    <div class="slider-value-mobility" id="sliderValueMin2">3</div>
+                    <div class="slider-value-mobility" id="sliderValueMax2">5</div>
+                    <div class="range-slider" id="mobility-slider">
+                        <span class="min-value" style="padding-bottom: 5px;">1</span>
+                        <input id="fromSliderMobility" type="range" value="1" min="1" max="10" step="1" />
+                        <input id="toSliderMobility" type="range" value="3" min="1" max="10" step="1" />
+                        <span class="max-value">10</span>
+
+
+                    </div>
+                    <img src="./img/size.png" alt="Size_sign"
+                        style="width: 25px; margin-top: 8px; display: inline-flex;position: relative;vertical-align: -6px;">
+                    <span>Size</span>
+                    <label class="switch">
+                        <input type="checkbox" id="size"
+                            data-target="fromSliderSize,toSliderSize,sliderValueMin3,sliderValueMax3">
+                        <span class="slider round"></span>
+                    </label>
+                    <br>
+                    <div class="slider-value-size" id="sliderValueMin3">3</div>
+                    <div class="slider-value-size" id="sliderValueMax3">5</div>
+                    <div class="range-slider" id="size-slider">
+                        <span class="min-value" style="padding-bottom: 5px;">1</span>
+                        <input id="fromSliderSize" type="range" value="1" min="1" max="10" step="1" />
+                        <input id="toSliderSize" type="range" value="3" min="1" max="10" step="1" />
+                        <span class="max-value">10</span>
+
+
+                    </div>
+                </div>
+                <div style="font-size: 18px; font-weight: 400;">Trait</div>
+                <div class="trait">
+                    <img src="./img/pressure_risistant.png" alt="Pressure_sign"
+                        style="width: 25px; margin-top: 10px; display: inline-flex;position: relative;vertical-align: -6px">
+                    <span>Pressure Resistant</span>
+                    <label class="switch">
+                        <input type="checkbox" id="Pressure Resistant">
+                        <span class="slider round"></span>
+                    </label>
+                    <br>
+
+                    <img src="./img/hydrophilic.png" alt="Hydrophilic_sign"
+                        style="width: 25px; margin-top: 10px; display: inline-flex;position: relative;vertical-align: -6px;">
+                    <span>Hydrophilic</span>
+                    <label class="switch">
+                        <input type="checkbox" id="Hydrophilic">
+                        <span class="slider round"></span>
+                    </label>
+                    <br>
+                    <img src="./img/aerobic.png" alt="Aerobic_sign"
+                        style="width: 25px; margin-top: 10px; display: inline-flex;position: relative;vertical-align: -6px;">
+                    <span>Aerobic</span>
+                    <label class="switch">
+                        <input type="checkbox" id="Aerobic">
+                        <span class="slider round"></span>
+                    </label>
+                    <br>
+                    <img src="./img/heat_resistance.png" alt="Heat_sign"
+                        style="width: 25px; margin-top: 10px; display: inline-flex;position: relative;vertical-align: -6px;">
+                    <span>Heat Resistant</span>
+                    <label class="switch">
+                        <input type="checkbox" id="Heat Resistant">
+                        <span class="slider round"></span>
+                    </label>
+                </div>
+            </div>
+
+            <!-- Right Box -->
+            <div class="right-box">
+                <div class="small_header">Site 2</div>
+                <br>
+                <div class="small_header" style="margin-bottom: 0px;">Attributes</div>
+                Rigidity: 1-2
+                <br>
+                Mobility: 8-10
+                <br>
+                Size: 6-8
+                <br>
+                <br>
+                <div class="small_header" style="margin-bottom: 0px;">Trait</div>
+                Desired: Heat Resistant <br>
+                Undesired: Aerobic
+
+                <br>
+
+            </div>
+
+
+        </div>
+
+    </div>
+    <!-- on click the continue button moves you to the page2.html-->
+    <div>
+        <a id="continueRef">
+            <button id="continueButton">Continue</button>
+        </a>
+    </div>
+    <script src="./js/page5.js"></script>
+</body>
+
+</html>
